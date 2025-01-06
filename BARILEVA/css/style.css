@@ -1,0 +1,220 @@
+/* style.css */
+
+/* Use non-default font (Open Sans) */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(https://c.wallhere.com/photos/40/e7/two_dog_pet_cats_white_face_animal_tom-518085.jpg!d);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  padding-top: 70px; /* Adjust this based on your navbar height */
+}
+
+/* Custom classes with ab- prefix */
+.ab-page-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.ab-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.ab-image {
+  margin: 20px 0;
+}
+
+.ab-services-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.ab-portfolio-item {
+  margin-bottom: 2rem;
+}
+
+.ab-blog-link {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ab-blog-link:hover {
+  text-decoration: underline;
+}
+
+.ab-pricing-table th,
+.ab-pricing-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ab-contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ab-card {
+  margin-bottom: 2rem;
+  cursor: pointer; /* for JS demonstration */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ab-page-title {
+    font-size: 2rem;
+  }
+}
+
+/* Navbar Style */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar.bg-light {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+}
+
+/* Style for navbar links */
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-nav .nav-item .nav-link {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #d5d4d4;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin: 15px 0;
+}
+
+.social-icon {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-icon img {
+  width: 25px; /* Set the size of the social media buttons */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.footer-copyright {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-links ul {
+      text-align: center;
+  }
+
+  .footer-links li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .footer-social {
+      display: flex;
+      justify-content: center;
+  }
+
+  .social-icon {
+      margin: 0 15px;
+  }
+}
