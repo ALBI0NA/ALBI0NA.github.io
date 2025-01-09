@@ -1,163 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - Pet Care</title>
-  <!-- Bootstrap CSS -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  />
-  <!-- Google Font -->
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
-  />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to PetCare</title>
+
+  <!-- Bootstrap, Google Fonts, Custom CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
 </head>
-<body id="about-page">
+
+<body id="pet-care">
+
   <!-- Header / Navbar -->
-  
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-          <img src="https://e7.pngegg.com/pngimages/548/122/png-clipart-dog-paw-cat-logo-dog-animals-poster-thumbnail.png" alt="Website Logo" width="30" height="30"/>
-          PetCare
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    
- 
-
-  <!-- Hero Section -->
-  <section class="jumbotron text-center bg-light">
-    <h1 class="display-4">About PetCare</h1>
-    <p class="lead">We are passionate about keeping your pets happy, healthy, and loved.</p>
-  </section>
-
-  <!-- About Us Section -->
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Who We Are</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <img src="images/about-us.jpg" alt="About Us" class="img-fluid rounded">
-      </div>
-      <div class="col-md-6">
-        <p>
-          At PetCare, we believe that pets are family. For years, we have been providing premium services and care, ensuring that your furry friends are always in good hands. From grooming to veterinary care, we are your one-stop destination for all pet needs.
-        </p>
-        <p>
-          Our team of professionals is dedicated to delivering love, comfort, and expert care, helping your pets live their best lives.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Our Mission and Vision Section -->
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-md-6">
-        <h3>Our Mission</h3>
-        <p>
-          To provide exceptional care and services that enrich the lives of pets and their owners. We are committed to promoting wellness, happiness, and a loving bond between pets and humans.
-        </p>
-      </div>
-      <div class="col-md-6">
-        <h3>Our Vision</h3>
-        <p>
-          To become a trusted and recognized name in pet care, ensuring every pet feels loved, healthy, and valued, no matter where they are.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Testimonials Section -->
-  <div class="container my-5">
-    <h2 class="text-center mb-4">What Our Clients Say</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <p class="card-text">"PetCare has been amazing for my dog, Max. The staff is friendly, and I always feel reassured leaving him in their care!"</p>
-            <p class="text-right"><strong>- Jane Doe</strong></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <p class="card-text">"I love the grooming services! My cat, Bella, always comes home looking fresh and happy."</p>
-            <p class="text-right"><strong>- John Smith</strong></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <p class="card-text">"Reliable and professional. I trust PetCare with all my pet's needs."</p>
-            <p class="text-right"><strong>- Emily Brown</strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer bg-light">
-    <div class="footer-container">
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Contact</a></li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <a class="navbar-brand" href="index.html">
+        <img src="https://e7.pngegg.com/pngimages/548/122/png-clipart-dog-paw-cat-logo-dog-animals-poster-thumbnail.png" width="30" height="30" alt="PetCare Logo">
+        PetCare
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="footer-social">
-        <a href="https://www.facebook.com" target="_blank" class="social-icon">
-          <img src="images/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://www.twitter.com" target="_blank" class="social-icon">
-          <img src="images/twitter.png" alt="Twitter">
-        </a>
-        <a href="https://www.instagram.com" target="_blank" class="social-icon">
-          <img src="images/instagram.png" alt="Instagram">
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" class="social-icon">
-          <img src="images/linkedn.png" alt="LinkedIn">
-        </a>
-      </div>
-      <div class="footer-copyright">
-        <p>&copy; 2025 PetCare. All Rights Reserved.</p>
+    </nav>
+  </header>
+
+ <!-- Hero Section with Parallax Background -->
+<section class="parallax text-center">
+  <h2>Welcome to PetCare</h2>
+  <a href="services.html" class="btn btn-primary btn-sm mt-4">Explore Our Services</a>
+</section>
+
+
+  <!-- About Us Section -->
+  <section class="about-us-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Who We Are</h2>
+      <p class="text-center mb-5">
+        At PetCare, we believe every pet deserves exceptional care. We're your trusted partner in ensuring your pets thrive with love, health, and happiness.
+      </p>
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="https://img.freepik.com/free-photo/ragdoll-breed-cat-face-close-up_2829-11405.jpg?t=st=1736446293~exp=1736449893~hmac=51b5a76a324447e47ffd24da86e9dbc8575c520077ee0c11f848120a63f6999d&w=1060" class="img-fluid rounded shadow-lg" alt="About Us Image">
+        </div>
+        <div class="col-md-6">
+          <h3>Why Choose PetCare?</h3>
+          <p>With years of experience in pet care, our team is passionate about making every pet feel loved and cherished. Here's why our clients trust us:</p>
+          <ul class="list-group">
+            <li class="list-group-item"><i class="fas fa-paw text-primary"></i> Experienced and certified pet care professionals.</li>
+            <li class="list-group-item"><i class="fas fa-heart text-danger"></i> Tailored care plans for your pet's unique needs.</li>
+            <li class="list-group-item"><i class="fas fa-stethoscope text-success"></i> Comprehensive grooming and veterinary services.</li>
+            <li class="list-group-item"><i class="fas fa-clock text-warning"></i> Convenient and reliable services for all pet types.</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <!-- JavaScript -->
+  <!-- Fun Facts Section -->
+  <section class="fun-facts py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Fun Facts</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h4><i class="fas fa-dog text-primary"></i> 10,000+</h4>
+          <p>Happy Pets Cared For</p>
+        </div>
+        <div class="col-md-4">
+          <h4><i class="fas fa-users text-success"></i> 5,000+</h4>
+          <p>Happy Clients</p>
+        </div>
+        <div class="col-md-4">
+          <h4><i class="fas fa-award text-danger"></i> 15+</h4>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta py-5 text-center">
+    <h3>Join the PetCare Family Today!</h3>
+    <p>We're here to take care of your pet's needs, so you can relax knowing they're in safe hands.</p>
+    <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch with Us</a>
+  </section>
+
+ <!-- Footer Section -->
+ <footer>
+  <!-- App Icons in the Footer -->
+  <div class="footer-links">
+      <a href="https://www.instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+          <img src="images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="Facebook">
+      </a>
+  </div>
+
+  <!-- Footer Text (Copyright or other information) -->
+  <div class="footer-text">
+      <p>&copy; 2025 PetCare. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- JavaScript (Bootstrap + Custom) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
-
-
-
