@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Team - Pet Care</title>
-  <!-- Bootstrap CSS -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  />
-  <!-- Google Font -->
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
-  />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team - PetCare</title>
+
+  <!-- Bootstrap, Google Fonts, Custom CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Adjust the size of the team member profile pictures */
+    .team-member img {
+      width: 150px; /* Adjust width here */
+      height: 150px; /* Adjust height here */
+      object-fit: cover;
+    }
+  </style>
 </head>
-<body id="my-responsive-website">
+
+<body id="pet-care">
+
   <!-- Header / Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <a class="navbar-brand" href="index.html">
-        <img src="https://e7.pngegg.com/pngimages/548/122/png-clipart-dog-paw-cat-logo-dog-animals-poster-thumbnail.png" alt="Website Logo" width="30" height="30"/>
+        <img src="https://e7.pngegg.com/pngimages/548/122/png-clipart-dog-paw-cat-logo-dog-animals-poster-thumbnail.png" width="30" height="30" alt="PetCare Logo">
         PetCare
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-      >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,93 +45,108 @@
       </div>
     </nav>
   </header>
-  
 
-  <div class="container my-5">
-    <h1 class="ab-page-title">Meet the Team</h1>
-    <p class="ab-text">
-      Our dedicated professionals work tirelessly to exceed client expectations.
-      Here are the people behind our success.
-    </p>
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="https://cdn.vectorstock.com/i/500p/54/17/person-gray-photo-placeholder-man-vector-24005417.jpg" alt="Team Member 1" class="rounded-circle" width="150" />
-        <h3 class="mt-2">John Doe</h3>
-        <p>CEO &amp; Founder</p>
-        <p>John has over 10 years of experience in the pet care industry. He founded PetCare with a vision of providing the best care for pets.</p>
+  <!-- Hero Section with Parallax Background -->
+  <section class="parallax text-center">
+    <h2>Meet the Team</h2>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Team Members</h2>
+      <div class="row">
+        <!-- Original 3 Members -->
+        <div class="col-md-4">
+          <div class="team-member text-center">
+            <img src="https://www.shutterstock.com/image-vector/person-gray-photo-placeholder-woman-600nw-1241538838.jpg" class="img-fluid rounded-circle mb-3" alt="Team Member 1">
+            <h4>Alice Brown</h4>
+            <p class="text-muted">Veterinarian</p>
+            <p>With over 10 years of experience, Alice is passionate about providing compassionate care to animals.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member text-center">
+            <img src="https://cdn.vectorstock.com/i/500p/54/17/person-gray-photo-placeholder-man-vector-24005417.jpg" class="img-fluid rounded-circle mb-3" alt="Team Member 2">
+            <h4>Mark Johnso</h4>
+            <p class="text-muted">Pet Groomer</p>
+            <p>Mark ensures your pets are pampered and looking their best with expert grooming skills.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member text-center">
+            <img src="https://www.shutterstock.com/image-vector/person-gray-photo-placeholder-woman-600nw-1241538838.jpg" class="img-fluid rounded-circle mb-3" alt="Team Member 3">
+            <h4>Emily Clark</h4>
+            <p class="text-muted">Pet Care Specialist</p>
+            <p>Emily has a deep love for animals and specializes in providing tailored care plans for every pet.</p>
+          </div>
+        </div>
+        
+        <!-- New 3 Members -->
+        <div class="col-md-4">
+          <div class="team-member text-center">
+            <img src="https://www.shutterstock.com/image-vector/person-gray-photo-placeholder-woman-600nw-1241538838.jpg" class="img-fluid rounded-circle mb-3" alt="Team Member 4">
+            <h4>Sarah Lee</h4>
+            <p class="text-muted">Animal Behaviorist</p>
+            <p>Sarah helps pets and owners build better relationships through behavioral therapy and training.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member text-center">
+            <img src="https://cdn.vectorstock.com/i/500p/54/17/person-gray-photo-placeholder-man-vector-24005417.jpg" class="img-fluid rounded-circle mb-3" alt="Team Member 5">
+            <h4>James Smith</h4>
+            <p class="text-muted">Pet Nutritionist</p>
+            <p>James ensures pets receive the best possible nutrition through tailored meal plans and dietary advice.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member text-center">
+            <img src="https://www.shutterstock.com/image-vector/person-gray-photo-placeholder-woman-600nw-1241538838.jpg" class="img-fluid rounded-circle mb-3" alt="Team Member 6">
+            <h4>Linda Green</h4>
+            <p class="text-muted">Pet Sitter</p>
+            <p>Linda offers reliable and loving care for pets while their owners are away, ensuring a stress-free experience.</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="https://cdn.vectorstock.com/i/500p/82/33/person-gray-photo-placeholder-woman-vector-24138233.jpg" alt="Team Member 2" class="rounded-circle" width="150" />
-        <h3 class="mt-2">Jane Smith</h3>
-        <p>Lead Developer</p>
-        <p>Jane is responsible for building our innovative pet care platform. She has a passion for technology and animals, which she combines in her work.</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="https://cdn.vectorstock.com/i/preview-1x/33/59/person-gray-photo-placeholder-woman-vector-22863359.jpg" alt="Team Member 3" class="rounded-circle" width="150" />
-        <h3 class="mt-2">Alice Brown</h3>
-        <p>Project Manager</p>
-        <p>Alice keeps all our projects on track. She coordinates between teams to ensure we meet our goals and deadlines.</p>
-      </div>
-    <br>
-    <br>
     </div>
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <img src="https://cdn.vectorstock.com/i/500p/54/17/person-gray-photo-placeholder-man-vector-24005417.jpg" alt="Team Member 4" class="rounded-circle" width="150" />
-        <h3 class="mt-2">Mark Johnson</h3>
-        <p>Senior Designer</p>
-        <p>Mark is in charge of creating user-friendly and beautiful designs for our website and app. He brings creativity to every project.</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="https://www.shutterstock.com/image-vector/person-gray-photo-placeholder-woman-600nw-1241538838.jpg" alt="Team Member 5" class="rounded-circle" width="150" />
-        <h3 class="mt-2">Emily White</h3>
-        <p>Marketing Specialist</p>
-        <p>Emily develops strategies to help PetCare reach new clients. Her knowledge of digital marketing helps our brand grow.</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <img src="https://cdn.vectorstock.com/i/500p/54/17/person-gray-photo-placeholder-man-vector-24005417.jpg" alt="Team Member 6" class="rounded-circle" width="150" />
-        <h3 class="mt-2">David Green</h3>
-        <p>Operations Manager</p>
-        <p>David oversees the day-to-day operations at PetCare. He ensures everything runs smoothly and that clients receive excellent service.</p>
-      </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta py-5 text-center">
+    <h3>Join the PetCare Family Today!</h3>
+    <p>We care for your pets like they're part of our family.</p>
+    <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- App Icons in the Footer -->
+    <div class="footer-links">
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
     </div>
-  </div>
 
-  <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-social">
-            <a href="https://www.facebook.com" target="_blank" class="social-icon">
-                <img src="images/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.twitter.com" target="_blank" class="social-icon">
-                <img src="images/twitter.png" alt="Twitter">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="social-icon">
-                <img src="images/instagram.png" alt="Instagram">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
-                <img src="images/linkedn.png" alt="LinkedIn">
-            </a>
-        </div>
-
-        <div class="footer-copyright">
-            <p>&copy; 2025 PetCare. All Rights Reserved.</p>
-        </div>
+    <!-- Footer Text (Copyright or other information) -->
+    <div class="footer-text">
+      <p>&copy; 2025 PetCare. All rights reserved.</p>
     </div>
   </footer>
 
   <!-- JavaScript (Bootstrap + Custom) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
+
 </html>
+
+
