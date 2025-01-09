@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services - Pet Care</title>
-  <!-- Bootstrap CSS -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  />
-  <!-- Google Font -->
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
-  />
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | PetCare</title>
+
+  <!-- Bootstrap, Google Fonts, Custom CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+ 
 </head>
-<body id="my-responsive-website">
+
+<body id="pet-care">
+
   <!-- Header / Navbar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <a class="navbar-brand" href="index.html">
-        <img src="https://e7.pngegg.com/pngimages/548/122/png-clipart-dog-paw-cat-logo-dog-animals-poster-thumbnail.png" alt="Website Logo" width="30" height="30"/>
+        <img src="https://e7.pngegg.com/pngimages/548/122/png-clipart-dog-paw-cat-logo-dog-animals-poster-thumbnail.png" width="30" height="30" alt="PetCare Logo">
         PetCare
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-      >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,56 +39,110 @@
       </div>
     </nav>
   </header>
+
+  <!-- Hero Section with Parallax Background -->
   
+    <section class="parallax text-center">
+      <h2>Our Services</h2>
+    </section>
+    
 
-  <div class="container my-5">
-    <h1 class="ab-page-title">Our Services</h1>
-    <p class="ab-text">
-      Below is an overview of the services we offer to help businesses thrive:
-    </p>
-    <ul class="ab-services-list">
-      <li><strong>Web Development</strong> – Custom websites with modern design</li>
-      <li><strong>SEO &amp; Digital Marketing</strong> – Boost online visibility &amp; engagement</li>
-      <li><strong>Branding &amp; Design</strong> – Memorable logos &amp; brand identities</li>
-    </ul>
-  </div>
-
-  <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+  <!-- Services Section -->
+  <section id="services-section" class="container py-5">
+    <h2 class="text-center mb-4">Our Featured Services</h2>
+    <div class="row">
+      <!-- Dog Care Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card service-card shadow">
+          <img src="https://pariahdog.b-cdn.net/wp-content/uploads/2023/04/the-importance-of-dog-care.jpg" class="card-img-top" alt="Dog Care" />
+          <div class="service-card-body">
+            <h5 class="card-title">Dog Care</h5>
+            <p class="card-text">From grooming to training, our dog care services are comprehensive and personalized.</p>
+          </div>
         </div>
-
-        <div class="footer-social">
-            <a href="https://www.facebook.com" target="_blank" class="social-icon">
-                <img src="images/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.twitter.com" target="_blank" class="social-icon">
-                <img src="images/twitter.png" alt="Twitter">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" class="social-icon">
-                <img src="images/instagram.png" alt="Instagram">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
-                <img src="images/linkedn.png" alt="LinkedIn">
-            </a>
+      </div>
+      <!-- Cat Care Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card service-card shadow">
+          <img src="https://www.webbox.co.uk/wp-content/uploads/2020/09/cat_small.jpg" class="card-img-top" alt="Cat Care" />
+          <div class="service-card-body">
+            <h5 class="card-title">Cat Care</h5>
+            <p class="card-text">We offer expert advice on grooming, feeding, and general care for your feline companions.</p>
+          </div>
         </div>
-
-        <div class="footer-copyright">
-            <p>&copy; 2025 PetCare. All Rights Reserved.</p>
-  
+      </div>
+      <!-- Fish Care Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card service-card shadow">
+          <img src="https://s7d2.scene7.com/is/image/PetSmart/ARFEAT-TheRightFoodToFeedYourFish-20160818?$LC0302$" class="card-img-top" alt="Fish Care" />
+          <div class="service-card-body">
+            <h5 class="card-title">Fish Care</h5>
+            <p class="card-text">From setting up your aquarium to maintaining it, we provide the best tips and services for your fish.</p>
+          </div>
         </div>
+      </div>
+      <!-- Bird Care Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card service-card shadow">
+          <img src="https://d2zp5xs5cp8zlg.cloudfront.net/image-88093-800.jpg" class="card-img-top" alt="Bird Care" />
+          <div class="service-card-body">
+            <h5 class="card-title">Bird Care</h5>
+            <p class="card-text">We offer a variety of services to help your birds stay healthy and happy.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Veterinary Services Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card service-card shadow">
+          <img src="https://assets.petco.com/petco/image/upload/f_auto,q_auto:best/vet-services-vetco-total-care-lifestyle-img-800x577" class="card-img-top" alt="Veterinary Services" />
+          <div class="service-card-body">
+            <h5 class="card-title">Veterinary Services</h5>
+            <p class="card-text">Our trusted veterinarians provide medical care, vaccinations, and more to keep your pet healthy.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Pet Training Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card service-card shadow">
+          <img src="https://www.training.com.au/wp-content/uploads/dog-trainer.jpg" class="card-img-top" alt="Pet Training" />
+          <div class="service-card-body">
+            <h5 class="card-title">Pet Training</h5>
+            <p class="card-text">We offer obedience training and behavior therapy to ensure your pet is well-mannered.</p>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
+  </section>
+  
+ 
+  
+  
 
-    <!-- JavaScript (Bootstrap + Custom) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-links text-center">
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+      <a href="https://www.linkedin.com" target="_blank">
+        <img src="images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
+    </div>
+
+    <div class="footer-text text-center">
+      <p>&copy; 2025 PetCare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript (Bootstrap + Custom) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
