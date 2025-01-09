@@ -271,6 +271,7 @@ footer {
 
 
 /* Parallax effect for background */
+/* Parallax effect for background */
 .parallax {
   background-image: url('https://img.freepik.com/free-photo/ragdoll-breed-cat-face-close-up_2829-11405.jpg?t=st=1736446293~exp=1736449893~hmac=51b5a76a324447e47ffd24da86e9dbc8575c520077ee0c11f848120a63f6999d&w=1060');
   background-attachment: fixed;
@@ -285,12 +286,24 @@ footer {
 
 .parallax a.btn {
   margin-top: 20px; /* Adjust this value to increase/decrease the space */
-margin-bottom: 20px;
-margin-left: 30px;
-background-color: black;
-border: none;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  background-color: black;
+  border: none;
+  color: white; /* Ensure text color is white */
+  padding: 10px 20px; /* Add some padding for the button */
+  font-size: 1rem; /* Adjust font size if needed */
 }
 
+/* Change the button color when hovered or active */
+/* Change the button color when hovered or active */
+.parallax a.btn:hover,
+.parallax a.btn:active {
+  background-color: grey; /* Change to grey when hovered or clicked */
+  color: white; /* Ensure the text color stays white */
+}
+
+/* Ensure button is not too large */
 .btn-lg {
   background-color: black;
   border: none;
@@ -300,6 +313,15 @@ border: none;
   font-size: 2.5rem;
   font-weight: 600;
 }
+
+/* Corrected button hover and active states for btn-primary */
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: grey;
+  color: white;
+}
+
+
 
 /* Card Styling for Better Layout */
 .card {
