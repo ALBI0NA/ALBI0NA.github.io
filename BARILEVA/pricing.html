@@ -5,17 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pricing - Pet Care</title>
   <!-- Bootstrap CSS -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
   <!-- Google Font -->
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
-  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"/>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Styling for Contact Us buttons */
+    .btn-contact {
+      background-color: black;
+      color: white;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .btn-contact:hover, .btn-contact:focus {
+      background-color: grey;
+      color: white;
+    }
+
+    /* Even out the card height for pricing plans */
+    .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .card-body {
+      flex: 1;
+    }
+  </style>
 </head>
 <body id="my-responsive-website">
   <!-- Header / Navbar -->
@@ -25,12 +41,7 @@
         <img src="https://e7.pngegg.com/pngimages/548/122/png-clipart-dog-paw-cat-logo-dog-animals-poster-thumbnail.png" alt="Website Logo" width="30" height="30"/>
         PetCare
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-      >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,97 +56,95 @@
       </div>
     </nav>
   </header>
-  
+
+  <!-- Parallax Hero Section -->
+  <section class="parallax">
+    <div class="container text-center">
+      <h1 class="display-4 text-white">Affordable Pet Care Plans</h1>
+      <p class="lead text-white">Choose the best plan for your furry friend!</p>
+    </div>
+  </section>
 
   <!-- Pricing Section -->
-  <div class="container my-5">
-    <h1 class="text-center mb-4">Our Pricing Plans</h1>
-    <p class="text-center mb-5">
-      Choose the plan that best suits your pet care needs. Our flexible pricing ensures top-notch service for every budget.
-    </p>
-    <div class="row">
-      <!-- Basic Plan -->
-      <div class="col-md-4">
-        <div class="card text-center shadow-sm">
-          <div class="card-header bg-primary text-white">
-            <h3>Basic</h3>
-            <p class="lead">$19/month</p>
-          </div>
-          <div class="card-body">
-            <ul class="list-unstyled">
-              <li>✔ Basic Features</li>
-              <li>✔ Email Support</li>
-              <li>✔ Monthly Updates</li>
-            </ul>
-            <a href="#" class="btn btn-primary btn-block mt-3">Choose Basic</a>
+  <section class="pricing-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Pricing Plans</h2>
+      <div class="row">
+        <!-- Basic Plan -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-light">
+            <div class="card-body text-center">
+              <h3 class="card-title">Basic Plan</h3>
+              <h4 class="text-muted">$29/month</h4>
+              <ul class="list-unstyled">
+                <li>Pet Grooming</li>
+                <li>Basic Training</li>
+                <li>Monthly Checkups</li>
+              </ul>
+              <a href="contact.html" class="btn btn-contact">Contact Us</a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Standard Plan -->
-      <div class="col-md-4">
-        <div class="card text-center shadow-sm">
-          <div class="card-header bg-success text-white">
-            <h3>Standard</h3>
-            <p class="lead">$49/month</p>
-          </div>
-          <div class="card-body">
-            <ul class="list-unstyled">
-              <li>✔ Standard Features</li>
-              <li>✔ Priority Support</li>
-              <li>✔ Analytics Dashboard</li>
-            </ul>
-            <a href="#" class="btn btn-success btn-block mt-3">Choose Standard</a>
+
+        <!-- Standard Plan -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-light">
+            <div class="card-body text-center">
+              <h3 class="card-title">Standard Plan</h3>
+              <h4 class="text-muted">$49/month</h4>
+              <ul class="list-unstyled">
+                <li>Pet Grooming</li>
+                <li>Advanced Training</li>
+                <li>Weekly Checkups</li>
+                <li>Emergency Care</li>
+              </ul>
+              <a href="contact.html" class="btn btn-contact">Contact Us</a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Premium Plan -->
-      <div class="col-md-4">
-        <div class="card text-center shadow-sm">
-          <div class="card-header bg-danger text-white">
-            <h3>Premium</h3>
-            <p class="lead">$99/month</p>
-          </div>
-          <div class="card-body">
-            <ul class="list-unstyled">
-              <li>✔ All Features</li>
-              <li>✔ 24/7 Support</li>
-              <li>✔ Advanced Analytics</li>
-            </ul>
-            <a href="#" class="btn btn-danger btn-block mt-3">Choose Premium</a>
+
+        <!-- Premium Plan -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-light">
+            <div class="card-body text-center">
+              <h3 class="card-title">Premium Plan</h3>
+              <h4 class="text-muted">$79/month</h4>
+              <ul class="list-unstyled">
+                <li>Pet Grooming</li>
+                <li>Premium Training</li>
+                <li>Daily Checkups</li>
+                <li>24/7 Emergency Care</li>
+                <li>Pet Insurance</li>
+              </ul>
+              <a href="contact.html" class="btn btn-contact">Contact Us</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-social">
-        <a href="https://www.facebook.com" target="_blank" class="social-icon">
-          <img src="images/facebook.png" alt="Facebook">
+  <!-- Footer Section -->
+  <footer>
+    <!-- App Icons in the Footer -->
+    <div class="footer-links">
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
         </a>
-        <a href="https://www.twitter.com" target="_blank" class="social-icon">
-          <img src="images/twitter.png" alt="Twitter">
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="Twitter">
         </a>
-        <a href="https://www.instagram.com" target="_blank" class="social-icon">
-          <img src="images/instagram.png" alt="Instagram">
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn">
         </a>
-        <a href="https://www.linkedin.com" target="_blank" class="social-icon">
-          <img src="images/linkedn.png" alt="LinkedIn">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="Facebook">
         </a>
-      </div>
-      <div class="footer-copyright">
-        <p>&copy; 2025 PetCare. All Rights Reserved.</p>
-      </div>
+    </div>
+
+    <!-- Footer Text (Copyright or other information) -->
+    <div class="footer-text">
+        <p>&copy; 2025 PetCare. All rights reserved.</p>
     </div>
   </footer>
 
@@ -145,4 +154,3 @@
   <script src="js/script.js"></script>
 </body>
 </html>
-
