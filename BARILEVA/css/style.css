@@ -17,12 +17,12 @@ body {
 
 /* Unique Background for index.html */
 .index-page {
-  background: url('../images/cat.png') no-repeat center center/cover; /* Custom background for index.html */
+  background: url('../images/cat.png') no-repeat center center/cover;
 }
 
 /* Default Background for all pages (except index) */
 body:not(.index-page) {
-background-image: url();
+  background-image: url();
 }
 
 /* Hero Section */
@@ -145,11 +145,8 @@ header h1 {
   margin-bottom: 10px;
 }
 
-
-
 /* Footer Styles */
 footer {
-  background-color: #ffffff;
   color: rgb(0, 0, 0);
   padding: 15px 0;
 }
@@ -204,10 +201,6 @@ footer {
   list-style-type: disc;
   margin-left: 20px;
   color: black;
-}
-
-.ab-portfolio-item {
-  margin-bottom: 2rem;
 }
 
 .ab-blog-link {
@@ -269,100 +262,6 @@ footer {
   margin-top: 20px;
 }
 
-
-/* Parallax effect for background */
-
-.parallax {
-  background-image: url('https://img.freepik.com/free-photo/ragdoll-breed-cat-face-close-up_2829-11405.jpg?t=st=1736446293~exp=1736449893~hmac=51b5a76a324447e47ffd24da86e9dbc8575c520077ee0c11f848120a63f6999d&w=1060');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(0, 0, 0);
-}
-
-.parallax a.btn {
-  margin-top: 20px; /* Adjust this value to increase/decrease the space */
-  margin-bottom: 20px;
-  margin-left: 30px;
-  background-color: black;
-  border: none;
-  color: white; /* Ensure text color is white */
-  padding: 10px 20px; /* Add some padding for the button */
-  font-size: 1rem; /* Adjust font size if needed */
-}
-
-/* Change the button color when hovered or active */
-/* Change the button color when hovered or active */
-.parallax a.btn:hover,
-.parallax a.btn:active {
-  background-color: grey; /* Change to grey when hovered or clicked */
-  color: white; /* Ensure the text color stays white */
-}
-
-/* Ensure button is not too large */
-.btn-lg {
-  background-color: black;
-  border: none;
-}
-
-.parallax h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
-/* Corrected button hover and active states for btn-primary */
-.btn-primary:hover,
-.btn-primary:active {
-  background-color: grey;
-  color: white;
-}
-
-
-
-/* Card Styling for Better Layout */
-.card {
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-  border-radius: 10px;
-}
-
-.card-body {
-  padding: 1.5rem;
-}
-
-.fun-facts h4 {
-  font-size: 2rem;
-  color: #000000;
-}
-
-.fun-facts i {
-  font-size: 3rem;
-}
-
-
-.service-card {
-  height: 100%; /* Ensures all cards are the same height */
-}
-.service-card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-.service-card img {
-  height: 200px; /* Fixed height for images */
-  object-fit: cover;
-}
-
-
 /* Parallax effect for background */
 .parallax {
   background-image: url('https://img.freepik.com/free-photo/ragdoll-breed-cat-face-close-up_2829-11405.jpg?t=st=1736446293~exp=1736449893~hmac=51b5a76a324447e47ffd24da86e9dbc8575c520077ee0c11f848120a63f6999d&w=1060');
@@ -382,15 +281,16 @@ footer {
   color: white;
 }
 
-/* Button customization */
 .parallax .btn {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: black;
   border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
 }
 
-/* Hover effect for buttons */
 .parallax .btn:hover,
 .parallax .btn:active {
   background-color: grey;
@@ -416,25 +316,6 @@ footer {
   padding: 20px;
 }
 
-/* Parallax effect for background */
-.parallax {
-  background-image: url('https://img.freepik.com/free-photo/ragdoll-breed-cat-face-close-up_2829-11405.jpg?t=st=1736446293~exp=1736449893~hmac=51b5a76a324447e47ffd24da86e9dbc8575c520077ee0c11f848120a63f6999d&w=1060');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(0, 0, 0);
-}
-
-.parallax h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  color: white;
-}
-
 /* Styling for Pricing Section */
 .pricing-section {
   padding: 60px 0;
@@ -443,15 +324,15 @@ footer {
 .card {
   border: none;
   border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  height: 100%; /* Ensures all cards have the same height */
+  height: 100%;
 }
 
 .card-body {
   padding: 2rem;
-  flex-grow: 1; /* Allows content to take up the remaining space */
+  flex-grow: 1;
 }
 
 .card-title {
@@ -470,23 +351,8 @@ footer {
 }
 
 .card:hover {
-  transform: translateY(-10px); /* Elevates the card on hover */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds shadow on hover */
-}
-
-.card .btn-primary {
-  background-color: #007bff;
-  border: none;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease; /* Smooth transition for button hover */
-}
-
-.card .btn-primary:hover {
-  background-color: #0056b3;
-}
-
-.card .btn-primary:active {
-  background-color: #004085;
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
@@ -497,7 +363,6 @@ footer {
   border-top-right-radius: 10px;
 }
 
-/* Equalize all card heights */
 .row {
   display: flex;
   justify-content: center;
@@ -509,31 +374,10 @@ footer {
   padding: 0 15px;
 }
 
-.card .card-body {
-  padding-bottom: 2rem;
-}
-
-/* Add a smooth background color transition on hover */
-.card:hover {
-  background-color: #f1f1f1;
-}
-
-/* Card size uniformity and content centering */
-.card {
-  height: 350px;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Distribute items vertically */
-}
-
 .card ul {
-  flex-grow: 1; /* Let the list of features take up the remaining space */
+  flex-grow: 1;
 }
 
-/* Style for Pricing Section Heading */
 h2 {
   font-size: 2.5rem;
   font-weight: 600;
@@ -542,29 +386,20 @@ h2 {
   color: #343a40;
 }
 
-/* Add some spacing between the pricing card and sign-up button */
-.card .btn-primary {
-  margin-top: 20px;
+/* Styling for Send Message button */
+.btn-send {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Custom classes with ab- prefix */
-/* General Styles */
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f4f7f6;
-  margin: 0;
-  padding: 0;
+.btn-send:hover,
+.btn-send:focus {
+  background-color: grey;
+  color: white;
 }
 
-h1, h3 {
-  color: #333;
-}
-
-p {
-  color: #6c757d;
-  font-size: 1rem;
-}
-
-
-
-
+.parallax .btn-primary {
+ margin-left: 20px; /*to increase spacing to the left*/
+  }
+  
