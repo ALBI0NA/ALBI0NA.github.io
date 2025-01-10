@@ -20,8 +20,6 @@ body {
   background: url('../images/cat.png') no-repeat center center/cover;
 }
 
-
-
 /* Hero Section */
 .hero {
   background: none;
@@ -125,7 +123,8 @@ header h1 {
 }
 
 .video-container iframe {
-  width: 560px;
+  width: 100%;
+  max-width: 560px;
   height: 315px;
   border: none;
 }
@@ -136,6 +135,8 @@ header h1 {
   box-shadow: 0 2px 5px rgba(138, 138, 138, 0.1);
   border-radius: 8px;
   text-align: center;
+  width: 100%;
+  max-width: 560px;
 }
 
 .video-card h3 {
@@ -152,6 +153,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: nowrap; /* Ensure items stay in a row */
 }
 
 .footer-links a img {
@@ -230,6 +232,35 @@ footer {
 @media (max-width: 768px) {
   .ab-page-title {
     font-size: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .video-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .video-container .video-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Keep footer items in a row on mobile */
+  .footer-links {
+    flex-wrap: nowrap; /* Keep items in a row on mobile */
+    justify-content: center;
   }
 }
 
@@ -396,44 +427,40 @@ h2 {
   color: white;
 }
 
-.parallax .btn-primary {
- margin-left: 20px; /*to increase spacing to the left*/
-  }
+/* Styling for Contact Us buttons */
+.btn-contact {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-   
-    /* Styling for Contact Us buttons */
-    .btn-contact {
-      background-color: black;
-      color: white;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    .btn-contact:hover, .btn-contact:focus {
-      background-color: grey;
-      color: white;
-    }
+.btn-contact:hover, .btn-contact:focus {
+  background-color: grey;
+  color: white;
+}
 
-    /* Even out the card height for pricing plans */
-    .card {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-    .card-body {
-      flex: 1;
-    }
+/* Even out the card height for pricing plans */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
- 
-    /* Styling for Back to Home button */
-    .btn-back-home {
-      background-color: black;
-      color: white;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
+.card-body {
+  flex: 1;
+}
 
-    .btn-back-home:hover, .btn-back-home:focus {
-      background-color: grey;
-      color: white;
-    }
+/* Styling for Back to Home button */
+.btn-back-home {
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
- 
+.btn-back-home:hover, .btn-back-home:focus {
+  background-color: grey;
+  color: white;
+}
+
   
+
