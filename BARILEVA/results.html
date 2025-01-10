@@ -5,24 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thank You - PetCare</title>
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* Styling for Back to Home button */
-    .btn-back-home {
-      background-color: black;
-      color: white;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .btn-back-home:hover, .btn-back-home:focus {
-      background-color: grey;
-      color: white;
-    }
-  </style>
-</head>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+<head>
 
 <body>
   <!-- Header / Navbar -->
@@ -93,7 +81,7 @@
       <p>&copy; 2025 PetCare. All rights reserved.</p>
     </div>
   </footer>
-<script>
+  <script>
   const urlParams = new URLSearchParams(window.location.search);
   const name = urlParams.get('name');
   const email = urlParams.get('email');
@@ -102,8 +90,6 @@
   // Display the submitted data
   document.getElementById('name').textContent = name;
   document.getElementById('email').textContent = email;
-  document.getElementById('message').textContent = message; 
-</script>
+  document.getElementById('message').textContent = message </script>
 </body>
-
 </html>
