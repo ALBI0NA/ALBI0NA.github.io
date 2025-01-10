@@ -12,7 +12,7 @@ html, body {
 }
 
 body {
-  padding-top: 56px; /* Ensure no content overlaps the fixed navbar */
+  padding-top: 56px; /* no content overlaps the fixed navbar */
 }
 
 /* Unique Background for index.html */
@@ -20,10 +20,7 @@ body {
   background: url('../images/cat.png') no-repeat center center/cover;
 }
 
-/* Default Background for all pages (except index) */
-body:not(.index-page) {
-  background-image: url();
-}
+
 
 /* Hero Section */
 .hero {
@@ -402,4 +399,41 @@ h2 {
 .parallax .btn-primary {
  margin-left: 20px; /*to increase spacing to the left*/
   }
+
+   
+    /* Styling for Contact Us buttons */
+    .btn-contact {
+      background-color: black;
+      color: white;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .btn-contact:hover, .btn-contact:focus {
+      background-color: grey;
+      color: white;
+    }
+
+    /* Even out the card height for pricing plans */
+    .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .card-body {
+      flex: 1;
+    }
+
+ 
+    /* Styling for Back to Home button */
+    .btn-back-home {
+      background-color: black;
+      color: white;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-back-home:hover, .btn-back-home:focus {
+      background-color: grey;
+      color: white;
+    }
+
+ 
   
