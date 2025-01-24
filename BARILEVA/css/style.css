@@ -1,5 +1,5 @@
-/* General Styles */
-html, body {
+ /* General Styles */
+ html, body {
   height: 100%;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -785,5 +785,3 @@ h2 {
   background-color: grey;
   color: white;
 }
-
-
