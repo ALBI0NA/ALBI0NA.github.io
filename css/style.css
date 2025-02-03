@@ -5,7 +5,7 @@
   font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
-  color: black; /* General text color */
+  
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; /* Fixed background effect */
