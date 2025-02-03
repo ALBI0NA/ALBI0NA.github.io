@@ -5,14 +5,15 @@
   font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: column;
-  color: black;
+  color: black; /* General text color */
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Fixed background effect */
 }
 
+
 body {
-  padding-top: 56px; 
+  padding-top: 56px; /* Space for fixed navbar */
 }
 
 /* Unique Background for index.html */
@@ -20,28 +21,7 @@ body {
   background: url('../images/cat.png') no-repeat center center/cover;
 }
 
-/* Hero Section */
-.hero {
-  background: none;
-  color: black;
-  padding: 100px 0;/* General Styles */
-  html, body {
-    height: 100%;
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    color: black; /* General text color */
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; /* Fixed background effect */
-  }
-  
-  body {
-    padding-top: 56px; /* Space for fixed navbar */
-  }
-  
-  /* Navbar Styles */
+/* Navbar Styles */
   .navbar {
     position: fixed;
     top: 0;
@@ -346,11 +326,6 @@ body {
     }
   }
   
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
 .hero::after {
   content: "";
   position: absolute;
