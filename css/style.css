@@ -17,8 +17,61 @@ body {
 
 /* Unique Background for index.html */
 .index-page {
-  background: url('../images/cat.png') no-repeat center center/cover;
+  background: url('../images/cat.png') no-repeat center center/cover; /* Page-specific background */
 }
+
+.index-page .hero {
+  height: calc(100vh - 100px); /* Full screen minus header */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 60px 70px; /* Inner padding */
+}
+
+.index-page .hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.index-page .hero p {
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+}
+
+.index-page .hero .buttons {
+  display: flex;
+  gap: 20px; /* Button spacing */
+  margin-top: 20px;
+}
+
+
+/* Index Page Hero Section */
+.index-page .hero {
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 60px 70px;
+}
+
+.index-page .hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.index-page .hero p {
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+}
+
+.index-page .hero .buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 
 /* Navbar Styles */
   .navbar {
@@ -172,36 +225,7 @@ body {
     margin-top: 10px;
     font-size: 0.8rem;
   }
-  
-  /* Unique Background for index.html */
-  .index-page {
-    background: url('../images/cat.png') no-repeat center center/cover; /* Page-specific background */
-  }
-  
-  .index-page .hero {
-    height: calc(100vh - 100px); /* Full screen minus header */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 60px 70px; /* Inner padding */
-  }
-  
-  .index-page .hero h1 {
-    font-size: 4rem;
-    margin: 0;
-  }
-  
-  .index-page .hero p {
-    font-size: 1.5rem;
-    margin: 10px 0 20px;
-  }
-  
-  .index-page .hero .buttons {
-    display: flex;
-    gap: 20px; /* Button spacing */
-    margin-top: 20px;
-  }
+
   
   /* Parallax effect for background */
   .parallax {
@@ -236,93 +260,6 @@ body {
   .parallax .btn:active {
     background-color: grey; /* Hover and active background */
     color: white;
-  }
-  
-  /* Custom Classes */
-  .ab-page-title {
-    font-size: 2.5rem; /* Title size */
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: #121212; /* Title color */
-    margin-top: 70px; /* Additional spacing */
-  }
-  
-  .ab-text {
-    font-size: 1rem;
-    line-height: 1.6; /* Improved readability */
-    margin-bottom: 1rem;
-    color: #121212;
-  }
-  
-  .ab-image {
-    margin: 20px 0; /* Vertical spacing */
-  }
-  
-  .ab-services-list {
-    list-style-type: disc; /* Bulleted list */
-    margin-left: 20px; /* Indentation */
-    color: black;
-  }
-  
-  .ab-blog-link {
-    text-decoration: none; /* Remove underline */
-    font-weight: 600;
-    color: black;
-  }
-  
-  .ab-blog-link:hover {
-    text-decoration: underline; /* Add underline on hover */
-  }
-  
-  .ab-pricing-table th,
-  .ab-pricing-table td {
-    text-align: center; /* Center content */
-    vertical-align: middle; /* Align middle */
-  }
-  
-  .ab-contact-form {
-    max-width: 1000px;
-    margin: 0 auto; /* Center form */
-  }
-  
-  .ab-card {
-    margin-bottom: 2rem; /* Spacing between cards */
-    cursor: pointer;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .ab-page-title {
-      font-size: 2rem; /* Smaller title on small screens */
-    }
-  
-    .hero h1 {
-      font-size: 3rem; /* Adjust hero title size */
-    }
-  
-    .hero p {
-      font-size: 1.2rem; /* Adjust hero subtitle size */
-    }
-  
-    .video-container {
-      flex-direction: column;
-      align-items: center; /* Center videos */
-    }
-  
-    .video-container iframe {
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    .video-container .video-card {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .footer-links {
-      flex-wrap: nowrap; /* Keep items in a row */
-      justify-content: center;
-    }
   }
   
 .hero::after {
@@ -438,35 +375,6 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* Footer Styles */
-footer {
-  color: rgb(0, 0, 0);
-  padding: 15px 0;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: nowrap; /* Ensure items stay in a row */
-}
-
-.footer-links a img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
-
-.footer-links a:hover img {
-  transform: scale(1.1);
-}
-
-.footer-text {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 0.8rem;
-}
-
 /* Custom Classes (ab- prefix) */
 .ab-page-title {
   font-size: 2.5rem;
@@ -559,66 +467,7 @@ footer {
   }
 }
 
-/* Index Page Hero Section */
-.index-page .hero {
-  height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 60px 70px;
-}
 
-.index-page .hero h1 {
-  font-size: 4rem;
-  margin: 0;
-}
-
-.index-page .hero p {
-  font-size: 1.5rem;
-  margin: 10px 0 20px;
-}
-
-.index-page .hero .buttons {
-  display: flex;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-/* Parallax effect for background */
-.parallax {
-  background-image: url('https://img.freepik.com/free-photo/ragdoll-breed-cat-face-close-up_2829-11405.jpg?t=st=1736446293~exp=1736449893~hmac=51b5a76a324447e47ffd24da86e9dbc8575c520077ee0c11f848120a63f6999d&w=1060');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(0, 0, 0);
-}
-
-.parallax h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  color: white;
-}
-
-.parallax .btn {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
-}
-
-.parallax .btn:hover,
-.parallax .btn:active {
-  background-color: grey;
-  color: white;
-}
 
 /* Service Cards */
 .service-card {
